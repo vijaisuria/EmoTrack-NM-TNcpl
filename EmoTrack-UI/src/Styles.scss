@@ -1,0 +1,19 @@
+#drop_zone {
+    border: 5px solid blue;
+    width: 200px;
+    height: 100px;
+  }
+.image-space {
+    width: 300px;
+    height: 280px;
+    border: 1px whitesmoke solid;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3616/3616929.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}  
+.image-space img {
+    width: 300px;
+    height: 280px;
+    object-fit: cover;
+}
