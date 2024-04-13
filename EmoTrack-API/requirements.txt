@@ -1,0 +1,11 @@
+flask
+flask_mail
+flask_jwt_extended
+python-dotenv
+requests
+numpy
+pandas
+seaborn
+scikit-learn
+joblib
+deepface

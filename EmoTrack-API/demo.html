@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Audio File</title>
+</head>
+<body>
+    <h1>Upload Audio File</h1>
+    <form id="audioForm" enctype="multipart/form-data">
+        <input type="file" name="audio" accept=".flac">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
+
+    <script>
+        document.getElementById('audioForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            
+            var formData = new FormData(this);
+            
+            fetch('http://localhost:5000/emotrack/audio', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display the output JSON response
+                document.getElementById('output').innerText = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                // Display error message if request fails
+                console.error('Error:', error);
+                document.getElementById('output').innerText = 'Error occurred while processing the audio.';
+            });
+        });
+    </script>
+</body>
+</html>

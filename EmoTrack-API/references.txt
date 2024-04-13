@@ -1,0 +1,15 @@
+ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition
+
+https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-english    (speech to text)
+
+emotion detection text:
+https://github.com/SannketNikam/Emotion-Detection-in-Text/blob/main/app.py
+
+Dataset
+https://zenodo.org/records/1188976#.YO6yI-gzaUk
+
+V. Tsouvalas, T. Ozcelebi and N. Meratnia, "Privacy-preserving Speech Emotion Recognition through Semi-Supervised Federated Learning," 
+2022 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops), Pisa, Italy, 2022, 
+pp. 359-364, doi: 10.1109/PerComWorkshops53856.2022.9767445.
+
+https://www.hindawi.com/journals/cin/2022/2645381/
